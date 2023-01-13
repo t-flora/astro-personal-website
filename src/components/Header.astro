@@ -1,0 +1,27 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../config';
+---
+
+<header>
+	<h2>
+		{SITE_TITLE}
+	</h2>
+	<nav>
+		<HeaderLink href="/">home</HeaderLink>
+		<HeaderLink href="/blog">blog</HeaderLink>
+		<HeaderLink href="/about">about</HeaderLink>
+		<HeaderLink href="/contact">contact</HeaderLink>
+		<HeaderLink href="/book-reviews">book-reviews</HeaderLink>
+		<HeaderLink href="https://twitter.com/__tflora__" target="_blank">twitter</HeaderLink>
+		<HeaderLink href="https://github.com/t-flora" target="_blank">github</HeaderLink>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0em 0 2em;
+	}
+	h2 {
+		margin: 0.5em 0;
+	}
+</style>
