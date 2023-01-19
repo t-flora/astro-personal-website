@@ -5,15 +5,15 @@
  */
 body {
 	font-family: Verdana, sans-serif;
+	color: #d2d2d2;
 	margin: auto;
 	padding: 20px;
-	max-width: 65ch;
+	max-width: 85ch;
 	text-align: left;
-	background-color: #fff;
+	background-color: #060c20;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
 }
 h1,
 h2,
@@ -23,7 +23,7 @@ h5,
 h6,
 strong,
 b {
-	color: #222;
+	color: #fff;
 }
 a {
 	color: #3273dc;
@@ -50,7 +50,7 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: #f2f2f2;
+	background-color: #101f52;
 }
 pre {
 	padding: 1rem;
@@ -60,7 +60,7 @@ pre > code {
 }
 blockquote {
 	border: 1px solid #999;
-	color: #222;
+	color: #fff;
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
@@ -78,7 +78,7 @@ ul li {
 ul li time {
 	flex: 0 0 130px;
 	font-style: italic;
-	color: #595959;
+	color: #fff;
 }
 
 ul li a:visited {

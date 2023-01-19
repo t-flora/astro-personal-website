@@ -7,7 +7,7 @@ h1 {
 }
 
 .spacer {
-    aspect-ratio: 960/300;
+    aspect-ratio: 900/600;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,5 +15,5 @@ h1 {
 }
 
 .layer1 {
-    background-image: url('../public/shapes/lvl1.svg');
+    background-image: url('/public/shapes/wave-1.svg');
 }
