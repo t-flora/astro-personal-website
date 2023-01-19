@@ -5,3 +5,15 @@ h1 {
     padding: 0;
     margin-bottom: 1rem;
 }
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('../public/shapes/lvl1.svg');
+}
