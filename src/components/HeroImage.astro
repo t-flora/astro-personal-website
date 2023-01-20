@@ -1,0 +1,18 @@
+---
+import { Picture } from "@astrojs/image/components";
+import profilePic from "/src/assets/profile-picture.jpg";
+import style from "/src/styles/landing.css"
+
+const widths = [450, 800, 1200];
+const sizes = "100vw";
+---
+<head>
+    <link rel="stylesheet" href="/src/styles/landing.css">
+</head>
+<Picture
+    class="circular-portrait"
+    src={profilePic}
+    alt="Profile picture"
+    widths={widths}
+    sizes={sizes}
+/>

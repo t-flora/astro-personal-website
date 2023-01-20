@@ -9,7 +9,12 @@ import react from "@astrojs/react";
 import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
+import image from "@astrojs/image";
+
+// https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
-  integrations: [mdx(), sitemap(), react(), svelte()]
+  site: 'https://tiagoflora.com',
+  integrations: [mdx(), sitemap(), react(), svelte(), image({
+    serviceEntryPoint: '@astrojs/image/sharp'
+  })]
 });

@@ -1,0 +1,41 @@
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.spacer {
+    aspect-ratio: 900/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('/shapes/wave-1.svg');
+}	
+
+.text-gradient {
+		background-image: var(--accent-gradient);
+        background-clip: border-box;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+}
+
+.circular-portrait {
+    position: relative;
+    width: auto;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 60%;
+}
+
+.circular-portrait Picture {
+    width: 100%;
+    height: auto;
+}

@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import HeroImage from '../components/HeroImage.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 ---
 
@@ -9,17 +10,19 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<link rel="stylesheet" href="/src/styles/home.css">
+		<link rel="stylesheet" href="/src/styles/landing.css">
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
 			<section>
 				<h1>🧑‍🚀 Hi there!</h1>
-				<h2>I&apos;m Tiago</h2>
+				<h2>I&apos;m <span class="text-gradient">Tiago</span></h2>
+				<HeroImage />
 			</section>
 			<section>
 			<p>
+				I am a <span class="text-gradient">frontend developer</span> and <span class="text-gradient">data scientist</span> based in the <span class="text-gradient">Bay Area</span>.
 				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
 				template serves as a lightweight, minimally-styled starting point for anyone looking to build
 				a personal website, blog, or portfolio with Astro.

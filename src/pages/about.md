@@ -6,4 +6,6 @@ updatedDate: "January 11 23"
 heroImage: "/placeholder-about.jpg"
 ---
 
-Hi! I'm a sales engineer interested in web development, with a degree in data science.
+Hi! I'm a sales engineer who's been working with web development and has a degree in data science.
+
+In my spare time I'm usually figuring out how Linux works, reading articles on anything from Roman cement to the elections in Madagascar, hiking, or learning something entirely new.

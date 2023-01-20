@@ -3,14 +3,23 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+ :root {
+    --main-bg-color: #060c20;
+	--main-font-color: #d2d2d2;
+	--main-url-color: #3273dc;
+	--main-code-color: #101f52;
+	--accent: 124, 58, 237;
+	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #04ba93 30%, white 60%);
+}
+
 body {
 	font-family: Verdana, sans-serif;
-	color: #d2d2d2;
+	color: var(--main-font-color);
 	margin: auto;
 	padding: 20px;
 	max-width: 85ch;
 	text-align: left;
-	background-color: #060c20;
+	background-color: var(--main-bg-color);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
@@ -26,7 +35,7 @@ b {
 	color: #fff;
 }
 a {
-	color: #3273dc;
+	color: var(--main-url-color);
 }
 nav a {
 	margin-right: 10px;
@@ -50,7 +59,7 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: #101f52;
+	background-color: var(--main-code-color);
 }
 pre {
 	padding: 1rem;
