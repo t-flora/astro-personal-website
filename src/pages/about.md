@@ -3,7 +3,8 @@ layout: "../layouts/BlogPost.astro"
 title: "About me"
 description: "Business, coding, and breadth."
 updatedDate: "January 11 23"
-heroImage: "/placeholder-about.jpg"
+heroImage: "src/assets/profile-picture.jpg"
+circularImage: true
 ---
 
 Hi! I'm a sales engineer who's been working with web development and has a degree in data science.

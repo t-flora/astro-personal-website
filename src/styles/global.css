@@ -9,21 +9,32 @@
 	--main-url-color: #3273dc;
 	--main-code-color: #101f52;
 	--accent: 124, 58, 237;
-	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #04ba93 30%, white 60%);
+	--fe-accent: 252, 114, 8;
+	--sh-accent: 242, 7, 160;
+	--ds-accent: 12, 232, 12;
+	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #04ba93 50%, white 60%);
+	--fe-gradient: linear-gradient(30deg, rgb(var(--fe-accent)), #7af507 50%, white 60%);
+	--sh-gradient: linear-gradient(60deg, rgb(var(--sh-accent)), #e80c34 50%, white 60%);
+	--ds-gradient: linear-gradient(30deg, rgb(var(--ds-accent)), #2cdbb5 50%, white 60%);
 }
 
 body {
 	font-family: Verdana, sans-serif;
 	color: var(--main-font-color);
 	margin: auto;
-	padding: 20px;
-	max-width: 85ch;
 	text-align: left;
 	background-color: var(--main-bg-color);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
 }
+
+#center-container {
+	margin: auto;
+	max-width: 85ch;
+	text-align: left;
+}
+
 h1,
 h2,
 h3,
@@ -92,4 +103,11 @@ ul li time {
 
 ul li a:visited {
 	color: #8e32dc;
+}
+
+.review-image {
+    position: relative;
+    width: auto;
+    height: 200px;
+    overflow: hidden;
 }

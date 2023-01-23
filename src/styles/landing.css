@@ -6,6 +6,18 @@ h1 {
     margin-bottom: 1rem;
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .spacer {
     aspect-ratio: 900/600;
     width: 100%;
@@ -15,15 +27,56 @@ h1 {
 }
 
 .layer1 {
-    background-image: url('/shapes/wave-1.svg');
+    background-image: url('/shapes/wave2.svg');
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    display: block;
 }	
 
-.text-gradient {
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.header-gradient {
 		background-image: var(--accent-gradient);
         background-clip: border-box;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		background-size: 400%;
+		background-size: 600%;
+		background-position: 0%;
+        animation: gradient 10s ease infinite;
+}
+
+.frontend-gradient {
+		background-image: var(--fe-gradient);
+        background-clip: border-box;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 600%;
+		background-position: 0%;
+}
+
+.sh-gradient {
+		background-image: var(--sh-gradient);
+        background-clip: border-box;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 600%;
+		background-position: 0%;
+}
+
+.data-science-gradient {
+		background-image: var(--ds-gradient);
+        background-clip: border-box;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 600%;
 		background-position: 0%;
 }
 
@@ -38,4 +91,8 @@ h1 {
 .circular-portrait Picture {
     width: 100%;
     height: auto;
+}
+
+.right-aligned {
+    text-align: right;
 }
