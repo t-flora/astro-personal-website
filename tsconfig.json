@@ -4,5 +4,7 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "types": ["@astrojs/image/client"]
-  }
+  },
+  "resolveJsonModule": true,
+  "esModuleInterop": true,
 }

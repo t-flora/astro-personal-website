@@ -35,6 +35,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 	<body>
 		<Header />
 		<main>
+		<div id="center-container">
 			<section>
 				<ul>
 					{
@@ -53,6 +54,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 					}
 				</ul>
 			</section>
+		</div>
 		</main>
 		<Footer />
 	</body>

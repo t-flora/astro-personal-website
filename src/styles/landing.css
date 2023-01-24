@@ -27,7 +27,7 @@ h1 {
 }
 
 .layer1 {
-    background-image: url('/shapes/wave2.svg');
+    background-image: url('/shapes/wave-2.svg');
     background-size: contain;
     background-position: center;
     position: relative;
@@ -91,6 +91,15 @@ h1 {
 .circular-portrait Picture {
     width: 100%;
     height: auto;
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+.blob-motion {
+    position: absolute;
+    transform: translateY(-20%);
 }
 
 .right-aligned {
