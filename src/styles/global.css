@@ -111,3 +111,24 @@ ul li a:visited {
     height: 200px;
     overflow: hidden;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "main . picture"
+        "last-update . picture";
+}
+
+.hero-image {
+    grid-area: picture;
+}
+
+.article-title {
+    grid-area: main;
+}
+
+.last-update {
+    grid-area: last-update;
+}
