@@ -1,5 +1,4 @@
-// @ts-check
-export default function ContactForm() {
+export default function ContactForm(): JSX.Element {
     return (
         <form 
             className="contact-form"
