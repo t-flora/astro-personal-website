@@ -14,8 +14,7 @@ const posts = (await Astro.glob('./book-reviews/*.{md,mdx}')).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-		</style>
+		<link rel="stylesheet" href="/styles/global.css" />
 	</head>
 	<body>
 		<Header />
