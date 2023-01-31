@@ -1,0 +1,30 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+
+import ContactForm from '../components/ContactForm';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
+        <style>
+        </style>
+    </head>
+    <body>
+        <Header />
+        <main>
+            <div id="center-container">
+                <section class="contact">
+                <div class="contact__container">
+                    <h2 class="contact__title">Contact</h2>
+                    <ContactForm client:load />
+                </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
