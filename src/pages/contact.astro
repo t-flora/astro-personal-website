@@ -3,28 +3,76 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
-
-import ContactForm from '../components/ContactForm';
 ---
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
-        <style>
+        <style> 
+            .contact-form {
+                margin: 40px 40px;
+                min-width: 250px;
+                width: 45%;
+            }
+            input,
+            textarea{
+                font-size: inherit;
+                margin: 15px 0;
+                padding: 12px 20px;
+                background-color: teal;
+                border: 1px solid black;
+                color: white;
+            }
+
+            button[type="submit"] {
+                font-size: inherit;
+                margin: 15px 0;
+                padding: 12px 20px;
+                width: 20%;
+                background-color: teal;
+                border: 1px solid black;
+                color: white;
+            }
+
+            .hidden {
+                clip: rect(0 0 0 0);
+                clip-path: inset(50%);
+                height: 1px;
+                overflow: hidden;
+                position: absolute;
+                white-space: nowrap;
+                width: 1px;
+            }
         </style>
     </head>
     <body>
         <Header />
         <main>
-            <div id="center-container">
-                <section class="contact">
-                <div class="contact__container">
-                    <h2 class="contact__title">Contact</h2>
-                    <ContactForm client:load />
-                </div>
-                </section>
-            </div>
+  <p>Here's an example of a Netlify Form! When you fill this out, the submissions can be found in the Netlify Admin site.</p>
+  <div class="contact-form">
+      <form
+        <!-- netlify -->
+        netlify-honeypot
+        name="feedback"
+        method="POST"
+        action="/success"
+      >
+        <p class="hidden">
+          <label>
+            Don’t fill this out if you’re human: <input name="bot-field" />
+          </label>
+        </p>
+        <input type="hidden" name="form-name" value="feedback" />
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" />
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required />
+        <label for="feedback">Message</label>
+        <textarea id="feedback" wrap="soft" name="feedback" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+  </div>
         </main>
     </body>
 </html>
