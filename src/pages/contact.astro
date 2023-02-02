@@ -23,16 +23,19 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
                 background-color: teal;
                 border: 1px solid black;
                 color: white;
+                border-radius: 6px;
+                width: 100%;
             }
 
             button[type="submit"] {
                 font-size: inherit;
                 margin: 15px 0;
                 padding: 12px 20px;
-                width: 20%;
+                width: justify;
                 background-color: teal;
                 border: 1px solid black;
                 color: white;
+                border-radius: 6px;
             }
 
             .hidden {
@@ -49,10 +52,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
     <body>
         <Header />
         <main>
-  <p>Here's an example of a Netlify Form! When you fill this out, the submissions can be found in the Netlify Admin site.</p>
-  <div class="contact-form">
+			<div id="center-container">
+    <div class="contact-form">
       <form
-        <!-- netlify -->
+        netlify
         netlify-honeypot
         name="feedback"
         method="POST"
@@ -60,7 +63,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
       >
         <p class="hidden">
           <label>
-            Don’t fill this out if you’re human: <input name="bot-field" />
+            Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
           </label>
         </p>
         <input type="hidden" name="form-name" value="feedback" />
@@ -73,6 +76,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
         <button type="submit">Submit</button>
       </form>
   </div>
+        </div>
         </main>
     </body>
 </html>
