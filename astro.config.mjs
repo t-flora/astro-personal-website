@@ -12,9 +12,14 @@ import svelte from "@astrojs/svelte";
 import image from "@astrojs/image";
 
 // https://astro.build/config
+import netlify from "@astrojs/netlify/functions";
+
+// https://astro.build/config
 export default defineConfig({
   site: 'https://tiagoflora.com',
   integrations: [mdx(), sitemap(), react(), svelte(), image({
     serviceEntryPoint: '@astrojs/image/sharp'
-  })]
+  })],
+  output: "server",
+  adapter: netlify()
 });
