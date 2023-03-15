@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 import react from "@astrojs/react";
 
 // https://astro.build/config
-import svelte from "@astrojs/svelte";
+// import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 import image from "@astrojs/image";
@@ -17,7 +17,7 @@ import netlify from "@astrojs/netlify/functions";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://tiagoflora.com',
-  integrations: [mdx(), sitemap(), react(), svelte(), image({
+  integrations: [mdx(), sitemap(), react(), image({
     serviceEntryPoint: '@astrojs/image/sharp'
   })],
   output: "server",
